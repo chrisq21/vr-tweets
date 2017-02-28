@@ -1,0 +1,74 @@
+body {
+  background: #FAFAFA;
+}
+
+.header-wrapper {
+  text-align: center;
+  background: white;
+  height: 5em;
+  line-height: 5em;
+}
+
+.header {
+  margin: 0;
+  position: relative;
+  line-height: inherit;
+  vertical-align: middle;
+  display: inline-block;
+  width: 75%;
+  border-bottom: 1px solid #eee;
+
+  /*animation:mymove 1s ease-out;*/
+  /* Safari and Chrome */
+  /*-webkit-animation:mymove 1s ease-out;*/
+}
+
+@keyframes mymove {
+  from {top:-200px; opacity: 0;}
+  to {top:0px; opacity: 1}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */ {
+  from {top:-200px; opacity: 0;}
+  to {top:0px; opacity: 1;}
+}
+
+/*.timeline {
+  padding: 0px 250px;
+}*/
+
+
+/* Custom, iPhone Retina */
+  @media only screen and (min-width : 320px) {
+    .timeline {
+      padding: 0;
+    }
+  }
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (min-width : 480px) {
+    .timeline {
+      padding: 0px 75px;
+    }
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+    .timeline {
+      padding: 0px 100px;
+    }
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+    .timeline {
+      padding: 0px 150px;
+    }
+  }
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px) {
+    .timeline {
+      padding: 0px 250px;
+    }
+  }
